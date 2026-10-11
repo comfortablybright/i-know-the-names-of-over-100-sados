@@ -1187,7 +1187,7 @@ function toggleSound() {
 
 function applyTheme(dark) {
   document.documentElement.dataset.theme = dark ? "dark" : "light";
-  elements.theme.textContent = dark ? "☀️" : "🌙";
+  elements.theme.textContent = dark ? "🌙" : "☀️";
 }
 
 function toggleTheme() {
