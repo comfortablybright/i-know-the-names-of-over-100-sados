@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1001",
+    "name": "교주",
+    "image": "data/image/sado-hidden/gyoju.png",
+    "sound": "data/audio/voice-hidden/gyoju.wav"
+  },
+  {
+    "id": "1002",
+    "name": "대표",
+    "image": "data/image/sado-hidden/daepyo.png",
+    "sound": "data/audio/voice-hidden/daepyo.wav"
+  },
+  {
+    "id": "1003",
+    "name": "고블린 무녀",
+    "image": "data/image/sado-hidden/doesnotexist.png",
+    "sound": null
+  },
+  {
+    "id": "1004",
+    "name": "리카롱",
+    "image": "data/image/sado-hidden/ricarong.png",
+    "sound": "data/audio/voice-hidden/ricarong.wav"
+  },
+  {
+    "id": "1005",
+    "name": "듀듀",
+    "image": "data/image/sado-hidden/duedue.png",
+    "sound": "data/audio/voice-hidden/duedue.wav"
+  },
+  {
+    "id": "1006",
+    "name": "민트",
+    "image": "data/image/sado-hidden/mint.png",
+    "sound": null
+  },
+  {
+    "id": "1007",
+    "name": "로라",
+    "image": "data/image/sado-hidden/lola.png",
+    "sound": null
+  },
+  {
+    "id": "1008",
+    "name": "영춘",
+    "image": "data/image/sado-hidden/youngchun.png",
+    "sound": "data/audio/voice-hidden/youngchun.wav"
+  },
+  {
+    "id": "1009",
+    "name": "골디",
+    "image": "data/image/sado-hidden/goldy.png",
+    "sound": "data/audio/voice-hidden/goldy.wav"
+  },
+  {
+    "id": "1010",
+    "name": "크레페",
+    "image": "data/image/sado-hidden/crepe.png",
+    "sound": "data/audio/voice-hidden/crepe.wav"
+  },
+  {
+    "id": "1011",
+    "name": "겨우살이",
+    "image": "data/image/sado-hidden/mistletoe.png",
+    "sound": "data/audio/voice-hidden/mistletoe.wav"
+  },
+  {
+    "id": "1012",
+    "name": "니펠",
+    "aliases":[
+      {"text": "주농이", "image": null, "sound": null}
+    ],
+    "image": "data/image/sado-hidden/niffel.png",
+    "sound": "data/audio/voice-hidden/niffel.wav"
+  },
+  {
+    "id": "1013",
+    "name": "할리벗",
+    "image": "data/image/sado-hidden/halibut.png",
+    "sound": null
+  },
+  {
+    "id": "1014",
+    "name": "칼라모리",
+    "image": "data/image/sado-hidden/callamori.png",
+    "sound": null
+  }
+]

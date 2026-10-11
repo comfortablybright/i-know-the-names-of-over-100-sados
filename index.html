@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나는 사도의 이름을 100가지 이상 알고 있다</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <main class="app">
+    <header class="topbar">
+      <p class="subtitle">Trickcal Apostles Name Quiz</p>
+      <h1>나는 사도의 이름을 100가지 이상 알고 있다</h1>
+    </header>
+
+    <div class="game-panel-wrapper">
+      <section class="game-panel">
+        <div class="stats">
+          <div class="game-info">
+            <span class="label">QUIZ</span>
+            <strong id="gameInfoMode" class="game-info-mode"></strong>
+            <span id="gameInfoOptions" class="game-info-options"></span>
+          </div>
+
+          <div class="stat">
+            <span class="label">SCORE</span>
+            <strong id="score">0 / 0</strong>
+            <span id="skipOptions" class="game-info-options"></span>
+          </div>
+
+          <div class="stat">
+            <span class="label">TIME</span>
+            <strong id="timer">00:00</strong>
+            <span id="timerOptions" class="game-info-options"></span>
+          </div>
+        </div>
+
+        <div class="answer-form">
+          <input id="answerInput" type="text" autocomplete="off" autofocus>
+          <button id="skipButton" class="button secondary skip-button" type="button">힌트</button>
+        </div>
+
+        <div class="game-actions">
+          <button id="giveUpButton" class="button secondary" type="button">포기하기</button>
+          <button id="resetButton" class="button secondary" type="button">재시작</button>
+          <button id="changeModeButton" class="button secondary" type="button">새 퀴즈</button>
+        </div>
+
+        <div id="message" class="message" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <section id="characterGrid" class="character-grid"></section>
+  </main>
+
+  <div id="hintOverlay" class="hint-overlay hidden">
+    <img id="hintOverlayImage" alt="">
+    <p class="hint-overlay-text">실루엣에 해당하는 사도를 맞춰주세요!</p>
+    <button id="hintSkipButton" class="button secondary" type="button">넘기기</button>
+  </div>
+
+  <div id="modeOverlay" class="overlay">
+    <div class="mode-modal">
+      <div class="mode-header">
+        <button id="closeModeButton" class="mode-close" type="button">×</button>
+        <h2>퀴즈 설정</h2>
+      </div>
+
+      <div class="mode-section">
+        <h3>모드</h3>
+        <div id="gameModeButtons" class="mode-buttons"></div>
+      </div>
+
+      <div id="categorySection" class="mode-section">
+        <h3>분류</h3>
+        <div id="categoryButtons" class="mode-buttons"></div>
+      </div>
+
+      <div id="sortSection" class="mode-section">
+        <h3>정렬</h3>
+        <div id="sortButtons" class="mode-buttons"></div>
+      </div>
+
+      <div id="personalitySection" class="mode-section">
+        <h3>성격</h3>
+        <div id="personalityButtons" class="mode-buttons"></div>
+      </div>
+
+      <div id="raceSection" class="mode-section">
+        <h3>종족</h3>
+        <div id="raceButtons" class="mode-buttons"></div>
+      </div>
+
+      <div id="releaseSection" class="mode-section">
+        <h3>범위</h3>
+        <label class="release-option">
+          <input id="releaseInitialIncluded" type="checkbox">
+          <span>출시 초기 사도 포함</span>
+        </label>
+        <label class="release-option">
+          <input id="releaseReverse" type="checkbox">
+          <span>역순으로 외우기</span>
+        </label>
+      </div>
+
+      <div class="game-option-row">
+        <div id="timeSection" class="mode-section">
+          <h3>시간 제한</h3>
+          <div class="mode-buttons">
+            <button id="timeInfiniteButton" type="button">∞</button>
+            <div id="timeLimitBox" class="time-limit-box">
+              <input id="timeLimitInput" type="number" min="1" max="999" step="1" inputmode="numeric" value="10">
+              <span>분</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="skipLimitSection" class="mode-section">
+          <h3>힌트</h3>
+          <div class="mode-buttons">
+            <div class="time-limit-box skip-limit-box">
+              <input id="skipLimitInput" type="number" min="0" max="999" step="1" inputmode="numeric" value="3">
+              <span>회</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="startButton" class="button primary start-button" type="button">시작하기!</button>
+
+      <div class="game-settings">
+        <button id="themeButton" class="button secondary icon-button" type="button">🌙</button>
+        <button id="soundButton" class="button secondary icon-button" type="button">🔊</button>
+        <button id="aliasTooltipButton" class="button secondary icon-button" type="button" aria-label="별명 표시 끄기" aria-pressed="true">
+          🏷️
+          <span class="tooltip" role="tooltip">프로필에 마우스를 올려 사도 별명 보기</span>
+        </button>
+        <button id="creditsButton" class="button secondary icon-button" type="button" aria-label="리소스 출처">📜</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="missedOverlay" class="overlay hidden">
+    <div class="missed-modal">
+      <div class="mode-header">
+        <button id="closeMissedButton" class="mode-close" type="button">×</button>
+        <h2>놓친 사도 목록</h2>
+      </div>
+      <div id="missedList" class="missed-list"></div>
+    </div>
+  </div>
+
+  <div id="creditsOverlay" class="overlay hidden">
+    <div class="mode-modal credits-modal" role="dialog" aria-modal="true" aria-labelledby="creditsTitle">
+      <div class="mode-header">
+        <h2 id="creditsTitle">리소스 출처 및 권리 안내</h2>
+        <button id="creditsCloseButton" class="mode-close" type="button" aria-label="닫기">×</button>
+      </div>
+      <div class="credits-content">
+        <p>
+          본 게임은 <strong>트릭컬 리바이브</strong>를 바탕으로 제작한 비공식 팬게임입니다.
+          공식 게임과 관련된 이미지, 음성 및 기타 리소스의 대부분은
+          <strong>에피드게임즈(Epid Games)</strong>의 저작물입니다.
+        </p>
+        <p>
+          아래 창작자들의 2차 창작 리소스도 일부 사용되었습니다.
+          각 리소스의 저작권 및 기타 권리는 해당 권리자에게 있습니다.
+        </p>
+        <ul class="credits-list">
+          <li>새틀빔 — <a href="https://www.youtube.com/@gumball9362" target="_blank" rel="noopener noreferrer">YouTube @gumball9362</a></li>
+          <li>라멘조리기 — <a href="https://www.youtube.com/@라멘조리기" target="_blank" rel="noopener noreferrer">YouTube @라멘조리기</a></li>
+          <li>이이응응 — <a href="https://www.youtube.com/@yiyiyuyu0202" target="_blank" rel="noopener noreferrer">YouTube @yiyiyuyu0202</a></li>
+          <li>이딴게 — <a href="https://www.youtube.com/@이딴게" target="_blank" rel="noopener noreferrer">YouTube @이딴게</a></li>
+          <li>소방관삼촌 — <a href="https://www.youtube.com/@sobang_uncle" target="_blank" rel="noopener noreferrer">YouTube @sobang_uncle</a></li>
+          <li>안젤리카 — <a href="https://x.com/jjigleangel" target="_blank" rel="noopener noreferrer">X @jjigleangel</a></li>
+          <li>거북새 — <a href="https://x.com/J_turtle" target="_blank" rel="noopener noreferrer">X @J_turtle</a></li>
+          <li>ㅇㅇ — <a href="https://x.com/ni_ca_alc" target="_blank" rel="noopener noreferrer">X @ni_ca_alc</a></li>
+        </ul>
+        <p>
+          본 게임은 트릭컬 리바이브의 공식 게임이 아니며, 에피드게임즈 및 위 창작자들과의
+          공식적인 제휴나 후원을 의미하지 않습니다. 리소스별 이용 조건은 각 권리자의 정책과
+          안내를 따릅니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
