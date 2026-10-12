@@ -72,6 +72,7 @@ const state = {
   gameStarted: false,
   soundEnabled: true,
   aliasTooltipsEnabled: false,
+  sensitiveAliasesEnabled: false,
   timeLimited: false,
   timeLimitMinutes: 10,
   activeTimeLimit: null,
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     skipLimitInput: $("#skipLimitInput"),
     theme: $("#themeButton"),
     aliasTooltipButton: $("#aliasTooltipButton"),
+    sensitiveAliasButton: $("#sensitiveAliasButton"),
     hintOverlay: $("#hintOverlay"),
     hintOverlayImage: $("#hintOverlayImage")  };
 
@@ -140,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     [$("#startButton"), startGame],
     [elements.theme, toggleTheme],
     [elements.aliasTooltipButton, toggleAliasTooltips],
+    [elements.sensitiveAliasButton, toggleSensitiveAliases],
     [$("#creditsButton"), () => elements.creditsOverlay.classList.remove("hidden")],
     [$("#creditsCloseButton"), closeCredits]
   ].forEach(([el, fn]) => el.addEventListener("click", fn));
@@ -149,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   updateAliasTooltipButton();
+  updateSensitiveAliasButton();
   initializeCanvas();
   applyTheme(localStorage.getItem(THEME_KEY) === "dark");
   initializeKeyboardViewport();
@@ -158,6 +162,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", refreshHintOverlay);
   $(".app").addEventListener("scroll", refreshHintOverlay, { passive: true });
   loadCharacters();
+});
+
+document.addEventListener("contextmenu", event => {
+  event.preventDefault();
+});
+
+document.addEventListener("dragstart", event => {
+  if (event.target instanceof HTMLImageElement) {
+    event.preventDefault();
+  }
 });
 
 function setMessage(text, type = "") {
@@ -219,17 +233,19 @@ function isValidHiddenCharacter(character) {
 function handleInput() {
   if (!state.gameStarted || state.finished) return;
 
-  const value = elements.input.value.trim();
-  if (!value) return;
+  const rawValue = elements.input.value;
+  const spaceMode = rawValue === "   ";
+  const value = rawValue.trim();
+  if (!value && !spaceMode) return;
 
-  const result = findAnswer(value);
+  const result = findAnswer(value, spaceMode);
 
   if (result) {
     if (!reveal(result.character, result.answer)) return;
     if (state.startedAt === null) startTimer();
   } else {
     if (state.hintCharacterId) return;
-    const hiddenResult = findHiddenAnswer(value);
+    const hiddenResult = findHiddenAnswer(value, spaceMode);
     if (!hiddenResult) return;
     revealHidden(hiddenResult.character, hiddenResult.answer);
   }
@@ -238,16 +254,18 @@ function handleInput() {
   if (!state.finished) elements.input.focus();
 }
 
-function findAnswer(input) {
+function findAnswer(input, spaceMode = false) {
   const normalized = normalize(input);
-  if (!normalized) return null;
+  if (!normalized && !spaceMode) return null;
 
   for (const character of getTargetCharacters()) {
     if (state.skippedIds.has(character.id)) continue;
     if (state.hintCharacterId && character.id !== state.hintCharacterId) continue;
 
     for (const answer of getAnswers(character)) {
-      if (normalize(answer.text) === normalized) return { character, answer };
+      if (spaceMode ? isSpaceAnswer(answer.text) : normalize(answer.text) === normalized) {
+        return { character, answer };
+      }
     }
   }
 
@@ -296,9 +314,9 @@ const hiddenKeys = answer => [
   normalize(answer.text.replace(HIDDEN_PAREN_RE, ""))
 ];
 
-function findHiddenAnswer(input) {
+function findHiddenAnswer(input, spaceMode = false) {
   const normalized = normalize(input);
-  if (!normalized) return null;
+  if (!normalized && !spaceMode) return null;
 
   for (const character of hiddenCharacters) {
     if (state.hiddenGuessedAnswers.has(character.id)) continue;
@@ -306,7 +324,7 @@ function findHiddenAnswer(input) {
     for (const answer of getAnswers(character)) {
       const keys = hiddenKeys(answer);
       if (keys.some(key => state.hiddenUsedAnswers.has(key))) continue;
-      if (keys.includes(normalized)) return { character, answer };
+      if (spaceMode ? isSpaceAnswer(answer.text) : keys.includes(normalized)) return { character, answer };
     }
   }
 
@@ -1210,6 +1228,20 @@ function updateAliasTooltipButton() {
   button.setAttribute("aria-label", state.aliasTooltipsEnabled ? "별명 표시 끄기" : "별명 표시 켜기");
 }
 
+function toggleSensitiveAliases() {
+  state.sensitiveAliasesEnabled = !state.sensitiveAliasesEnabled;
+  updateSensitiveAliasButton();
+  updateAllAliasTooltips();
+}
+
+function updateSensitiveAliasButton() {
+  const button = elements.sensitiveAliasButton;
+
+  button.classList.toggle("active", state.sensitiveAliasesEnabled);
+  button.setAttribute("aria-pressed", String(state.sensitiveAliasesEnabled));
+  button.setAttribute("aria-label", state.sensitiveAliasesEnabled ? "민감한 별명 끄기" : "민감한 별명 켜기");
+}
+
 function updateAllAliasTooltips() {
   for (const slot of elements.grid.querySelectorAll(".character-slot")) {
     const isHidden = Boolean(slot.closest(".hidden-character-group"));
@@ -1234,11 +1266,16 @@ function updateSlotAliasTooltip(slot, character, guessed) {
 
   if (!state.aliasTooltipsEnabled || !guessed) return;
 
-  const aliases = Array.isArray(character.aliases)
-    ? character.aliases
-        .filter(alias => alias && typeof alias.text === "string" && alias.text.trim())
-        .map(alias => alias.text.trim())
-    : [];
+  const aliasLists = [character.aliases];
+  if (state.sensitiveAliasesEnabled) aliasLists.push(character.aliases_sensitive);
+
+  const aliases = aliasLists.flatMap(list =>
+    Array.isArray(list)
+      ? list
+          .filter(alias => alias && typeof alias.text === "string" && alias.text.trim())
+          .map(alias => alias.text.trim())
+      : []
+  );
 
   const tooltip = document.createElement("span");
   tooltip.className = "alias-tooltip";
@@ -1246,6 +1283,10 @@ function updateSlotAliasTooltip(slot, character, guessed) {
   tooltip.textContent = aliases.length > 0 ? aliases.join("\n") : "없음";
 
   slot.appendChild(tooltip);
+}
+
+function isSpaceAnswer(text) {
+  return typeof text === "string" && text.length > 0 && !text.trim();
 }
 
 function normalize(text) {
@@ -1354,8 +1395,12 @@ function getAnswers(character) {
     sound: character.sound ?? null
   }];
 
-  if (Array.isArray(character.aliases)) {
-    for (const alias of character.aliases) {
+  const aliasLists = [character.aliases];
+  if (state.sensitiveAliasesEnabled) aliasLists.push(character.aliases_sensitive);
+
+  for (const list of aliasLists) {
+    if (!Array.isArray(list)) continue;
+    for (const alias of list) {
       if (!alias || typeof alias.text !== "string") continue;
       answers.push({
         text: alias.text,

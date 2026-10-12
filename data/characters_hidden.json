@@ -14,6 +14,10 @@
   {
     "id": "1003",
     "name": "고블린 무녀",
+    "aliases":[
+      {"text": "존재하지 않는 기억", "image": null, "sound": null},
+      {"text": "피스", "image": null, "sound": null}
+    ],
     "image": "data/image/sado-hidden/doesnotexist.png",
     "sound": null
   },
@@ -62,6 +66,9 @@
   {
     "id": "1011",
     "name": "겨우살이",
+    "aliases":[
+      {"text": "겨붕이", "image": null, "sound": null}
+    ],
     "image": "data/image/sado-hidden/mistletoe.png",
     "sound": "data/audio/voice-hidden/mistletoe.wav"
   },
@@ -69,7 +76,8 @@
     "id": "1012",
     "name": "니펠",
     "aliases":[
-      {"text": "주농이", "image": null, "sound": null}
+      {"text": "주농이", "image": null, "sound": null},
+      {"text": "쭈거", "image": null, "sound": "data/audio/voice-hidden/niffel-petit.wav"}
     ],
     "image": "data/image/sado-hidden/niffel.png",
     "sound": "data/audio/voice-hidden/niffel.wav"
@@ -84,6 +92,12 @@
     "id": "1014",
     "name": "칼라모리",
     "image": "data/image/sado-hidden/callamori.png",
+    "sound": null
+  },
+  {
+    "id": "1015",
+    "name": "엘드르",
+    "image": "data/image/sado-hidden/eldr.png",
     "sound": null
   }
 ]

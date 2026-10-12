@@ -3,7 +3,8 @@
     "id": "001",
     "name": "다야",
     "aliases":[
-      {"text": "다이아몬드", "image": null, "sound": null}
+      {"text": "다이아몬드", "image": null, "sound": null},
+      {"text": "반투명드래곤", "image": null, "sound": null}
     ],
     "personality": "순수",
     "race": "용족",
@@ -16,7 +17,8 @@
     "id": "002",
     "name": "이프리트",
     "aliases":[
-      {"text": "이프리드", "image": "data/image/sado-alt/ifrit-old-tomboy.png", "sound": "data/audio/voice-alt/ifrit-old.wav"}
+      {"text": "이프리드", "image": "data/image/sado-alt/ifrit-old-tomboy.png", "sound": "data/audio/voice-alt/ifrit-old.wav"},
+      {"text": "부르스타", "image": "data/image/sado-alt/ifrit-bluestar.png", "sound": null}
     ],
     "personality": "광기",
     "race": "정령",
@@ -28,6 +30,11 @@
   {
     "id": "003",
     "name": "코미",
+    "aliases":[
+      {"text": "냥냥구루", "image": null, "sound": null},
+      {"text": "우리코미는이렇지않아", "image": "data/image/sado-alt/kommy-bilibili.png", "sound": "data/audio/voice-alt/kommy-bilibili.wav"}
+
+    ],
     "personality": "우울",
     "race": "수인",
     "releaseOrder": "0",
@@ -38,6 +45,9 @@
   {
     "id": "004",
     "name": "마에스트로 2호",
+    "aliases":[
+      {"text": "진짜엘레나", "image": null, "sound": null}
+    ],
     "personality": "광기",
     "race": "엘프",
     "releaseOrder": "0",
@@ -48,6 +58,9 @@
   {
     "id": "005",
     "name": "네르",
+    "aliases_sensitive":[
+      {"text": "배신자", "image": "data/image/sado-alt/ner-betrayer.png", "sound": "data/audio/voice-alt/ner-betrayer.wav"}
+    ],
     "personality": "광기",
     "race": "요정",
     "releaseOrder": "0",
@@ -72,7 +85,9 @@
     "id": "007",
     "name": "스피키",
     "aliases":[
-      {"text": "스핔이", "image": "data/image/sado-alt/speaki-neruji.png", "sound": "data/audio/voice-alt/speaki-neruji.wav"}
+      {"text": "스핔이", "image": "data/image/sado-alt/speaki-neruji.png", "sound": "data/audio/voice-alt/speaki-neruji.wav"},
+      {"text": "스피네", "image": "data/image/sado-alt/speaki-old.png", "sound": "data/audio/voice-alt/speaki-old.wav"}
+
     ],
     "personality": "순수",
     "race": "유령",
@@ -84,6 +99,10 @@
   {
     "id": "008",
     "name": "실라",
+    "aliases":[
+      {"text": "패배의 정령", "image": "data/image/sado-alt/sylla-lose.png", "sound": "data/audio/voice-alt/sylla-lose.wav"},
+      {"text": "선풍기", "image": "data/image/sado-alt/sylla-fan.png", "sound": null}
+    ],
     "personality": "냉정",
     "race": "정령",
     "releaseOrder": "0",
@@ -107,6 +126,9 @@
   {
     "id": "010",
     "name": "빅우드",
+    "aliases_sensitive":[
+      {"text": "빅카스", "image": "data/image/sado-alt/bigwood-bicchus.png", "sound": "data/audio/voice-alt/bigwood-bicchus.wav"}
+    ],
     "personality": "순수",
     "race": "정령",
     "releaseOrder": "0",
@@ -117,6 +139,11 @@
   {
     "id": "011",
     "name": "제이드",
+    "aliases":[
+      {"text": "비취", "image": null, "sound": null},
+      {"text": "섭씨벽옥", "image": null, "sound": null},
+      {"text": "제진구", "image": "data/image/sado-alt/jade-angry.png", "sound": "data/audio/voice-alt/jade-angry.wav"}
+    ],
     "personality": "냉정",
     "race": "용족",
     "releaseOrder": "0",
@@ -127,6 +154,9 @@
   {
     "id": "012",
     "name": "아멜리아",
+    "aliases":[
+      {"text": "엘레나님최고", "image": null, "sound": null}
+    ],
     "personality": "냉정",
     "race": "엘프",
     "releaseOrder": "0",
@@ -138,7 +168,9 @@
     "id": "013",
     "name": "벨리타",
     "aliases":[
-      {"text": "베르니카", "image": "data/image/sado-alt/belita-old.png", "sound": "data/audio/voice-alt/belita-old.wav"}
+      {"text": "베르니카", "image": "data/image/sado-alt/belita-old.png", "sound": "data/audio/voice-alt/belita-old.wav"},
+      {"text": "언니여왕", "image": null, "sound": null},
+      {"text": "뛰었음 청년", "image": null, "sound": null}
     ],
     "personality": "광기",
     "race": "마녀",
@@ -152,7 +184,8 @@
     "name": "에르핀",
     "aliases":[
       {"text": "빠아아아앙", "image": "data/image/sado-alt/erpin-baaaaang.png", "sound": "data/audio/voice-alt/erpin-baaaaang.wav"},
-      {"text": "으후-부우부", "image": "data/image/sado-alt/erpin-euhubuubu.png", "sound": "data/audio/voice-alt/erpin-euhubuubu.wav"}
+      {"text": "으후-부우부", "image": "data/image/sado-alt/erpin-euhubuubu.png", "sound": "data/audio/voice-alt/erpin-euhubuubu.wav"},
+      {"text": "와구와구프린세스", "image": null, "sound": null}
     ],
     "personality": "순수",
     "race": "요정",
@@ -165,6 +198,7 @@
     "id": "015",
     "name": "루포",
     "aliases":[
+      {"text": "사료스탕스브레인", "image": null, "sound": null},
       {"text": "폭스테일", "image": "data/image/sado-alt/rufo-old.png", "sound": "data/audio/voice-alt/rufo-old.wav"}
     ],
     "personality": "활발",
@@ -179,6 +213,10 @@
     "name": "에슈르",
     "aliases":[
       {"text": "빵순이", "image": "data/image/sado-alt/ashur-angry.png", "sound": "data/audio/voice-alt/ashur-angry.wav"},
+      {"text": "빵집아니고마법학교입니다", "image": null, "sound": null}
+
+    ],
+    "aliases_sensitive":[
       {"text": "도마", "image": "data/image/sado-alt/ashur-crying.png", "sound": "data/audio/voice-alt/ashur-crying.wav"}
     ],
     "personality": "우울",
@@ -192,7 +230,8 @@
     "id": "017",
     "name": "엘레나",
     "aliases":[
-      {"text": "시장님", "image": null, "sound": null}
+      {"text": "시장님", "image": null, "sound": null},
+      {"text": "알레나", "image": "data/image/sado-alt/elena-old.png", "sound": "data/audio/voice-alt/elena-old.wav"}
     ],
     "personality": "냉정",
     "race": "엘프",
@@ -204,6 +243,10 @@
   {
     "id": "018",
     "name": "프리클",
+    "aliases_sensitive":[
+      {"text": "뿡뿡이", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"},
+      {"text": "잘자가스", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"}
+    ],
     "personality": "냉정",
     "race": "마녀",
     "releaseOrder": "0",
@@ -215,8 +258,13 @@
     "id": "019",
     "name": "키디언",
     "aliases":[
-      {"text": "축구공", "image": "data/image/sado-alt/kidian-football.png", "sound": "data/audio/voice-alt/kidian-football.wav"},
+      {"text": "끼디융", "image": null, "sound": null},
+      {"text": "흑요석", "image": null, "sound": null},
+      {"text": "별빛은하수", "image": null, "sound": null},
       {"text": "교오오오오주우우우우", "image": null, "sound": "data/audio/voice-alt/kidian-slow.wav"}
+    ],
+    "aliases_sensitive":[
+      {"text": "축구공", "image": "data/image/sado-alt/kidian-football.png", "sound": "data/audio/voice-alt/kidian-football.wav"}
     ],
     "personality": "우울",
     "race": "용족",
@@ -228,6 +276,9 @@
   {
     "id": "020",
     "name": "루드",
+    "aliases":[
+      {"text": "루비", "image": null, "sound": null}
+    ],
     "personality": "활발",
     "race": "용족",
     "releaseOrder": "0",
@@ -264,6 +315,9 @@
   {
     "id": "023",
     "name": "가비아",
+    "aliases":[
+      {"text": "트랙터", "image": "data/image/sado-alt/gabia-tractor.png", "sound": null}
+    ],
     "personality": "순수",
     "race": "정령",
     "releaseOrder": "0",
@@ -284,6 +338,9 @@
   {
     "id": "025",
     "name": "베니",
+    "aliases":[
+      {"text": "사료스탕스베니", "image": null, "sound": "data/audio/voice-alt/beni-nanbeni.wav"}
+    ],
     "personality": "활발",
     "race": "수인",
     "releaseOrder": "0",
@@ -295,6 +352,8 @@
     "id": "026",
     "name": "시스트",
     "aliases":[
+      {"text": "자수정", "image": null, "sound": null},
+      {"text": "정직믿음신용", "image": null, "sound": null},
       {"text": "대갈짱커용", "image": "data/image/sado-alt/sist-angry.png", "sound": "data/audio/voice-alt/sist-angry.wav"}
     ],
     "personality": "광기",
@@ -307,6 +366,9 @@
   {
     "id": "027",
     "name": "페스타",
+    "aliases":[
+      {"text": "레볼루션10", "image": null, "sound": null}
+    ],
     "personality": "우울",
     "race": "엘프",
     "releaseOrder": "0",
@@ -317,6 +379,9 @@
   {
     "id": "028",
     "name": "레비",
+    "aliases":[
+      {"text": "언더그라운드언더독", "image": null, "sound": null}
+    ],
     "personality": "우울",
     "race": "마녀",
     "releaseOrder": "0",
@@ -329,7 +394,8 @@
     "name": "마리",
     "aliases":[
       {"text": "할리", "image": "data/image/sado-alt/marie-old.png", "sound": "data/audio/voice-alt/marie-old.wav"},
-      {"text": "황금손", "image": null, "sound": null}
+      {"text": "   ", "image": "data/image/sado/EliasCitizen.png", "sound": null},
+      {"text": "황금손", "image": "data/image/sado-alt/marie-goldhand.png", "sound": "data/audio/voice-alt/marie-goldhand.wav"}
     ],
     "personality": "활발",
     "race": "요정",
@@ -355,6 +421,9 @@
   {
     "id": "031",
     "name": "포셔",
+    "aliases":[
+      {"text": "포셔(R41)", "image": "data/image/sado-alt/posher-r41.png", "sound": null}
+    ],
     "personality": "우울",
     "race": "마녀",
     "releaseOrder": "0",
@@ -375,6 +444,9 @@
   {
     "id": "033",
     "name": "에스피",
+    "aliases":[
+      {"text": "드림팬텀", "image": null, "sound": null}
+    ],
     "personality": "냉정",
     "race": "유령",
     "releaseOrder": "0",
@@ -385,6 +457,9 @@
   {
     "id": "034",
     "name": "마고",
+    "aliases":[
+      {"text": "불-놀이", "image": "data/image/sado-alt/mago-fire.png", "sound": "data/audio/voice-alt/mago-fire.wav"}
+    ],
     "personality": "순수",
     "race": "수인",
     "releaseOrder": "0",
@@ -405,11 +480,15 @@
   {
     "id": "036",
     "name": "로네",
+    "aliases":[
+      {"text": "이파스터스마", "image": null, "sound": null},
+      {"text": "돈가스", "image": "data/image/sado-alt/rohne-cutlet.png", "sound": "data/audio/voice-alt/rohne-cutlet.wav"},
+      {"text": "돈까스", "image": "data/image/sado-alt/rohne-cutlet.png", "sound": "data/audio/voice-alt/rohne-cutlet.wav"}
+    ],
     "personality": "순수",
     "race": "엘프",
     "releaseOrder": "0",
-    "releaseTerm": "01",
-    "image": "data/image/sado/Rohne.png",
+    "releaseTerm": "01",    "image": "data/image/sado/Rohne.png",
     "sound": "data/audio/voice/Rohne.wav"
   },
   {
@@ -429,7 +508,10 @@
     "id": "038",
     "name": "클로에",
     "aliases":[
-      {"text": "클황", "image": "data/image/sado-alt/chloe-ssadagu.png", "sound": "data/audio/voice-alt/chloe-ssadagu.wav"}
+      {"text": "세바스티안", "image": "data/image/sado-alt/chloe-sebastian.png", "sound": "data/audio/voice-alt/chloe-sebastian.wav"},
+      {"text": "클황", "image": "data/image/sado-alt/chloe-ssadagu.png", "sound": "data/audio/voice-alt/chloe-ssadagu.wav"},
+      {"text": "폭력건치", "image": "data/image/sado-alt/chloe-teeth.png", "sound": null},
+      {"text": "엘레강스부띠끄", "image": null, "sound": null}
     ],
     "personality": "광기",
     "race": "요정",
@@ -441,6 +523,10 @@
   {
     "id": "039",
     "name": "아야",
+    "aliases":[
+      {"text": "동동 버들", "image": "data/image/sado-alt/aya-everice.png", "sound": null},
+      {"text": "에버-아이스", "image": "data/image/sado-alt/aya-everice.png", "sound": null}
+    ],
     "personality": "냉정",
     "race": "마녀",
     "releaseOrder": "0",
@@ -527,6 +613,9 @@
   {
     "id": "047",
     "name": "알레트",
+    "aliases":[
+      {"text": "미트쉴드", "image": null, "sound": null}
+    ],
     "personality": "순수",
     "race": "엘프",
     "releaseOrder": "0",
@@ -537,6 +626,12 @@
   {
     "id": "048",
     "name": "타이다",
+    "aliases":[
+      {"text": "타이다(R41)", "image": "data/image/sado-alt/taida-r41.png", "sound": null}
+    ],
+    "aliases_sensitive":[
+      {"text": "헨타이다", "image": "data/image/sado-alt/taida-hentaida.png", "sound": "data/audio/voice-alt/taida-hentaida.wav"}
+    ],
     "personality": "활발",
     "race": "엘프",
     "releaseOrder": "0",
@@ -547,6 +642,9 @@
   {
     "id": "049",
     "name": "레이지",
+    "aliases":[
+      {"text": "서전트페퍼", "image": null, "sound": null}
+    ],
     "personality": "냉정",
     "race": "엘프",
     "releaseOrder": "0",
@@ -589,7 +687,9 @@
     "name": "버터",
     "aliases":[
       {"text": "마들렌", "image": "data/image/sado-alt/butter-madeleine.png", "sound": "data/audio/voice-alt/butter-madeleine.wav"},
-      {"text": "버터바보", "image": "data/image/sado-alt/butter-crying.png", "sound": "data/audio/voice-alt/butter-crying.wav"}
+      {"text": "버터바보", "image": "data/image/sado-alt/butter-crying.png", "sound": "data/audio/voice-alt/butter-crying.wav"},
+      {"text": "얄ㄹ미운수인", "image": "data/image/sado-alt/butter-yalmiun.png", "sound": "data/audio/voice-alt/butter-yalmiun.wav"}
+
     ],
     "personality": "활발",
     "race": "수인",
@@ -602,6 +702,7 @@
     "id": "054",
     "name": "티그",
     "aliases":[
+      {"text": "사료스탕스대장", "image": null, "sound": null},
       {"text": "구티그", "image": "data/image/sado-alt/tig-old.png", "sound": "data/audio/voice-alt/tig-old.wav"}
     ],
     "personality": "활발",
@@ -615,7 +716,9 @@
     "id": "055",
     "name": "나이아",
     "aliases":[
-      {"text": "익스켈", "image": "data/image/sado-alt/naia-old.png", "sound": "data/audio/voice-alt/naia-old.wav"}
+      {"text": "익스켈", "image": "data/image/sado-alt/naia-old.png", "sound": "data/audio/voice-alt/naia-old.wav"},
+      {"text": "정수기", "image": "data/image/sado-alt/naia-waterdispenser.png", "sound": null},
+      {"text": "심심해애애", "image": "data/image/sado-alt/naia-shout.png", "sound": "data/audio/voice-alt/naia-shout.wav"}
     ],
     "personality": "순수",
     "race": "정령",
@@ -641,6 +744,7 @@
     "id": "057",
     "name": "비비",
     "aliases":[
+      {"text": "수은", "image": null, "sound": null},
       {"text": "따잇", "image": "data/image/sado-alt/vivi-panic.png", "sound": "data/audio/voice-alt/vivi-panic.wav"},
       {"text": "비비따잇", "image": "data/image/sado-alt/vivi-panic.png", "sound": "data/audio/voice-alt/vivi-panic.wav"}
     ],
@@ -654,6 +758,9 @@
   {
     "id": "058",
     "name": "힐데",
+    "aliases":[
+      {"text": "힐데(R41)", "image": "data/image/sado-alt/hilde-r41.png", "sound": null}
+    ],
     "personality": "우울",
     "race": "엘프",
     "releaseOrder": "5",
@@ -664,6 +771,9 @@
   {
     "id": "059",
     "name": "셀리네",
+    "aliases":[
+      {"text": "쉐리", "image": null, "sound": null}
+    ],
     "personality": "활발",
     "race": "유령",
     "releaseOrder": "6",
@@ -677,6 +787,9 @@
     "aliases":[
       {"text": "에다", "image": "data/image/sado-alt/epica-eda.png", "sound": null}
     ],
+    "aliases_sensitive":[
+      {"text": "뒤도시오교주", "image": "data/image/sado-alt/epica-turnaround.png", "sound": "data/audio/voice-alt/epica-turnaround.wav"}
+    ],
     "personality": "활발",
     "race": "수인",
     "releaseOrder": "7",
@@ -686,26 +799,30 @@
   },
   {
     "id": "061",
-    "name": "리츠",
-    "personality": "광기",
-    "race": "용족",
-    "releaseOrder": "8",
-    "releaseTerm": "12",
-    "image": "data/image/sado/Leets.png",
-    "sound": "data/audio/voice/Leets.wav"
-  },
-  {
-    "id": "062",
     "name": "앨리스",
     "aliases":[
       {"text": "구리스", "image": "data/image/sado-alt/alice-old.png", "sound": "data/audio/voice-alt/alice-old.wav"}
     ],
     "personality": "광기",
     "race": "유령",
-    "releaseOrder": "9",
+    "releaseOrder": "8",
     "releaseTerm": "12",
     "image": "data/image/sado/Alice.png",
     "sound": "data/audio/voice/Alice.wav"
+  },
+  {
+    "id": "062",
+    "name": "리츠",
+    "aliases":[
+      {"text": "강철", "image": null, "sound": null},
+      {"text": "백수의용족", "image": "data/image/sado-alt/leets-neet.png", "sound": null}
+    ],
+    "personality": "광기",
+    "race": "용족",
+    "releaseOrder": "9",
+    "releaseTerm": "12",
+    "image": "data/image/sado/Leets.png",
+    "sound": "data/audio/voice/Leets.wav"
   },
   {
     "id": "063",
@@ -765,6 +882,9 @@
   {
     "id": "068",
     "name": "롤렛",
+    "aliases":[
+      {"text": "봉봉", "image": null, "sound": null}
+    ],
     "personality": "광기",
     "race": "마녀",
     "releaseOrder": "15",
@@ -785,6 +905,9 @@
   {
     "id": "070",
     "name": "리스티",
+    "aliases":[
+      {"text": "건전한엘프명15T", "image": null, "sound": null}
+    ],
     "personality": "우울",
     "race": "엘프",
     "releaseOrder": "16",
@@ -811,7 +934,9 @@
     "aliases":[
       {"text": "리슝좍", "image": "data/image/sado-alt/renewa-jjak.png", "sound": "data/audio/voice-alt/renewa-jjak.wav"},
       {"text": "슝좍", "image": "data/image/sado-alt/renewa-jjak.png", "sound": "data/audio/voice-alt/renewa-jjak.wav"},
-      {"text": "좍", "image": "data/image/sado-alt/renewa-jjak.png", "sound": "data/audio/voice-alt/renewa-jjak.wav"}
+      {"text": "좍", "image": "data/image/sado-alt/renewa-jjak.png", "sound": "data/audio/voice-alt/renewa-jjak.wav"},
+      {"text": "극장알바", "image": "data/image/sado-alt/renewa-theater.png", "sound": null},
+      {"text": "고급실라", "image": "data/image/sado-alt/renewa-luxurysylla.png", "sound": "data/audio/voice-alt/renewa-luxurysylla.wav"}
     ],
     "personality": "광기",
     "race": "엘프",
@@ -853,6 +978,10 @@
   {
     "id": "076",
     "name": "바롱",
+    "aliases":[
+      {"text": "세상의구원자", "image": null, "sound": null},
+      {"text": "재미의왕", "image": "data/image/sado-alt/barong-kingoffun.png", "sound": "data/audio/voice-alt/barong-kingoffun.wav"}
+    ],
     "personality": "냉정",
     "race": "유령",
     "releaseOrder": "21",
@@ -877,7 +1006,8 @@
     "id": "078",
     "name": "스노키",
     "aliases":[
-      {"text": "볼두한", "image": "data/image/sado-alt/snorky-koja.png", "sound": "data/audio/voice-alt/snorky-koja.wav"}
+      {"text": "볼두한", "image": "data/image/sado-alt/snorky-koja.png", "sound": "data/audio/voice-alt/snorky-koja.wav"},
+      {"text": "콩콩밀크", "image": null, "sound": null}
     ],
     "personality": "우울",
     "race": "마녀",
@@ -889,6 +1019,10 @@
   {
     "id": "079",
     "name": "피라",
+    "aliases":[
+      {"text": "황철석", "image": null, "sound": null},
+      {"text": "쩐$땡겨드립니다※", "image": null, "sound": null}
+    ],
     "personality": "광기",
     "race": "용족",
     "releaseOrder": "23",
@@ -912,6 +1046,9 @@
   {
     "id": "081",
     "name": "칸타",
+    "aliases":[
+      {"text": "탑스핀블레이드", "image": null, "sound": null}
+    ],
     "personality": "냉정",
     "race": "요정",
     "releaseOrder": "24",
@@ -949,6 +1086,9 @@
   {
     "id": "084",
     "name": "폴랑",
+    "aliases_sensitive":[
+      {"text": "어린이애호가", "image": "data/image/sado-alt/polan-loveyoung.png", "sound": "data/audio/voice-alt/polan-loveyoung.wav"}
+    ],
     "personality": "광기",
     "race": "요정",
     "releaseOrder": "27",
@@ -973,6 +1113,9 @@
   {
     "id": "086",
     "name": "리온",
+    "aliases_sensitive":[
+      {"text": "빗치", "image": "data/image/sado-alt/lion-unhero.png", "sound": "data/audio/voice-alt/lion-unhero.wav"}
+    ],
     "personality": "우울",
     "race": "수인",
     "releaseOrder": "29",
@@ -984,7 +1127,9 @@
     "id": "087",
     "name": "오팔",
     "aliases":[
-      {"text": "단백", "image": null, "sound": null}
+      {"text": "단백", "image": null, "sound": null},
+      {"text": "양산형반짝이", "image": null, "sound": null},
+      {"text": "대성통곡", "image": "data/image/sado-alt/opal-diecrying.png", "sound": "data/audio/voice-alt/opal-diecrying.wav"}
     ],
     "personality": "순수",
     "race": "용족",
@@ -1025,7 +1170,8 @@
     "id": "090",
     "name": "아이시아",
     "aliases":[
-      {"text": "냉장고", "image": "data/image/sado-alt/eisia-fridge.png", "sound": "data/audio/voice-alt/eisia-fridge.wav"}
+      {"text": "냉장고", "image": "data/image/sado-alt/eisia-fridge.png", "sound": "data/audio/voice-alt/eisia-fridge.wav"},
+      {"text": "냉혹한CEO", "image": null, "sound": null}
     ],
     "personality": "냉정",
     "race": "엘프",
@@ -1050,6 +1196,9 @@
   {
     "id": "092",
     "name": "슈로",
+    "aliases_sensitive":[
+      {"text": "떡갈비", "image": "data/image/sado-alt/suro-galbi.png", "sound": "data/audio/voice-alt/suro-galbi.wav"}
+    ],
     "personality": "활발",
     "race": "수인",
     "releaseOrder": "35",
@@ -1060,6 +1209,9 @@
   {
     "id": "093",
     "name": "라이카",
+    "aliases":[
+      {"text": "짜릿스파크", "image": null, "sound": null}
+    ],
     "personality": "순수",
     "race": "정령",
     "releaseOrder": "36",
@@ -1071,7 +1223,8 @@
     "id": "094",
     "name": "벨라",
     "aliases":[
-      {"text": "짱킹갓존재", "image": "data/image/sado-alt/vela-jjangkinggodtheexistence.png", "sound": "data/audio/voice-alt/vela-jjangkinggodtheexistence.wav"}
+      {"text": "짱킹갓존재", "image": "data/image/sado-alt/vela-jjangkinggodtheexistence.png", "sound": "data/audio/voice-alt/vela-jjangkinggodtheexistence.wav"},
+      {"text": "존붕이", "image": "data/image/sado-alt/vela-jonbung.png", "sound": null}
     ],
     "personality": "활발",
     "race": "유령",
@@ -1083,6 +1236,9 @@
   {
     "id": "095",
     "name": "네티",
+    "aliases":[
+      {"text": "자철석", "image": null, "sound": null}
+    ],
     "personality": "광기",
     "race": "용족",
     "releaseOrder": "38",
@@ -1140,6 +1296,10 @@
   {
     "id": "100",
     "name": "아르코",
+    "aliases":[
+      {"text": "포도찌개", "image": null, "sound": null},
+      {"text": "샤인그레이프", "image": null, "sound": null}
+    ],
     "personality": "활발",
     "race": "정령",
     "releaseOrder": "43",
@@ -1160,6 +1320,9 @@
   {
     "id": "102",
     "name": "아네트",
+    "aliases":[
+      {"text": "석류석", "image": null, "sound": null}
+    ],
     "personality": "광기",
     "race": "용족",
     "releaseOrder": "45",
@@ -1172,7 +1335,10 @@
     "name": "로네(시장)",
     "aliases":[
       {"text": "로장", "image": null, "sound": null},
-      {"text": "시로네", "image": null, "sound": null}
+      {"text": "시로네", "image": null, "sound": null},
+      {"text": "돈가스시장", "image": "data/image/sado-alt/rohnemayor-cutlet.png", "sound": "data/audio/voice-alt/rohnemayor-cutlet.wav"},
+      {"text": "돈까스시장", "image": "data/image/sado-alt/rohnemayor-cutlet.png", "sound": "data/audio/voice-alt/rohnemayor-cutlet.wav"}
+
     ],
     "personality": "우울",
     "race": "엘프",
@@ -1185,7 +1351,7 @@
     "id": "104",
     "name": "마카샤",
     "aliases":[
-      {"text": "바바", "image": "data/image/sado-alt/makasha-baba.png", "sound":"data/audio/voice-alt/makasha-baba.wav"}
+      {"text": "바바", "image": "data/image/sado-alt/makasha-baba.png", "sound": "data/audio/voice-alt/makasha-baba.wav"}
     ],
     "personality": "활발",
     "race": "마녀",
@@ -1197,6 +1363,9 @@
   {
     "id": "105",
     "name": "시저",
+    "aliases":[
+      {"text": "최강최악최흉의빌런", "image": null, "sound": "data/audio/voice-alt/scizor-scizorscizor.wav"}
+    ],
     "personality": "냉정",
     "race": "정령",
     "releaseOrder": "48",
@@ -1222,7 +1391,8 @@
     "id": "107",
     "name": "우로스",
     "aliases":[
-      {"text": "우로스사악", "image": "data/image/sado-alt/uroswicked.png", "sound": "data/audio/voice/UrosWicked.wav"}
+      {"text": "우로스사악", "image": "data/image/sado-alt/uroswicked.png", "sound": "data/audio/voice/UrosWicked.wav"},
+      {"text": "우로롱", "image": "data/image/sado-alt/uros-urolong.png", "sound": null}
     ],
     "personality": "공명",
     "race": "수인",
@@ -1280,6 +1450,10 @@
   {
     "id": "112",
     "name": "하이디",
+    "aliases_sensitive":[
+      {"text": "개씨궁", "image": "data/image/sado-alt/heidi-gsg.png", "sound": "data/audio/voice-alt/heidi-gsg.wav"},
+      {"text": "궁뎅이년", "image": "data/image/sado-alt/heidi-gsg.png", "sound": "data/audio/voice-alt/heidi-gsg.wav"}
+    ],
     "personality": "광기",
     "race": "엘프",
     "releaseOrder": "54",
@@ -1311,6 +1485,9 @@
     "id": "115",
     "name": "셰이디(역전)",
     "aliases": [
+      {"text": "역전셰이디", "image": null, "sound": null},
+      {"text": "역셰", "image": null, "sound": null},
+      {"text": "활이디", "image": null, "sound": null},
       {"text": "역할맥", "image": null, "sound": null}
     ],
     "personality": "활발",
@@ -1324,7 +1501,8 @@
     "id": "116",
     "name": "다야(퓨어샤인)",
     "aliases": [
-      {"text": "퓨어샤인", "image": null, "sound": null}
+      {"text": "퓨어샤인", "image": null, "sound": null},
+      {"text": "다야(주책)", "image": "data/image/sado-alt/dayapureshine-juchaek.png", "sound": "data/audio/voice-alt/dayapureshine-juchaek.wav"}
     ],
     "personality": "광기",
     "race": "용족",
@@ -1468,6 +1646,7 @@
     "id": "127",
     "name": "실비아",
     "aliases": [
+      {"text": "진은", "image": null, "sound": null},
       {"text": "은석", "image": "data/image/sado-alt/silvia-eunseok.png", "sound": null},
       {"text": "개볼빙", "image": "data/image/sado-alt/silvia-gaebolbing.png", "sound": "data/audio/voice-alt/silvia-gaebolbing.wav"}
     ],
@@ -1502,7 +1681,9 @@
     "id": "130",
     "name": "에슈르(마도)",
     "aliases": [
-      {"text": "대슈르", "image": "data/image/sado-alt/ashurmagi-daeshur.png", "sound": "data/audio/voice-alt/ashurmagi-daeshur.wav"},
+      {"text": "대슈르", "image": "data/image/sado-alt/ashurmagi-daeshur.png", "sound": "data/audio/voice-alt/ashurmagi-daeshur.wav"}
+    ],
+    "aliases_sensitive":[
       {"text": "도마도마", "image": "data/image/sado-alt/ashurmagi-angry.png", "sound": "data/audio/voice-alt/ashurmagi-angry.wav"}
     ],
     "personality": "활발",
@@ -1516,7 +1697,9 @@
     "id": "131",
     "name": "스패럿",
     "aliases": [
-      {"text": "앵죤투", "image": "data/image/sado-alt/sparrot-dumb.png", "sound": "data/audio/voice-alt/sparrot-dumb.wav"}
+      {"text": "앵죤투", "image": "data/image/sado-alt/sparrot-dumb.png", "sound": "data/audio/voice-alt/sparrot-dumb.wav"},
+      {"text": "이야알", "image": "data/image/sado-alt/sparrot-aye.png", "sound": "data/audio/voice-alt/sparrot-aye.wav"},
+      {"text": "새대가리", "image": "data/image/sado-alt/sparrot-birdhead.png", "sound": "data/audio/voice-alt/sparrot-birdhead.wav"}
     ],
     "personality": "순수",
     "race": "수인",
