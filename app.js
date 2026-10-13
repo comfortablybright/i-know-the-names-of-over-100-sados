@@ -319,7 +319,6 @@ function findHiddenAnswer(input, spaceMode = false) {
   if (!normalized && !spaceMode) return null;
 
   for (const character of hiddenCharacters) {
-    if (state.hiddenGuessedAnswers.has(character.id)) continue;
 
     for (const answer of getAnswers(character)) {
       const keys = hiddenKeys(answer);
@@ -678,13 +677,15 @@ function renderHiddenGroup() {
   const slots = group.querySelector(".character-slots");
 
   for (const [characterId, answer] of state.hiddenGuessedAnswers) {
-    if (slots.querySelector(`[data-id="${characterId}"]`)) continue;
+    const existing = slots.querySelector(`[data-id="${characterId}"]`);
+    if (existing && existing.dataset.answer === answer.text) continue;
 
     const character = hiddenCharacters.find(c => c.id === characterId);
     if (!character) continue;
 
     const slot = document.createElement("div");
     slot.dataset.id = character.id;
+    slot.dataset.answer = answer.text;
     slot.className = "character-slot revealed";
 
     const img = document.createElement("img");
@@ -703,7 +704,9 @@ function renderHiddenGroup() {
 
     slot.appendChild(img);
     updateSlotAliasTooltip(slot, character, true);
-    slots.appendChild(slot);
+
+    if (existing) existing.replaceWith(slot);
+    else slots.appendChild(slot);
   }
 }
 
