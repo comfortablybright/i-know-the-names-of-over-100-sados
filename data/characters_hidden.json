@@ -48,6 +48,11 @@
   {
     "id": "1008",
     "name": "영춘",
+    "aliases":[
+      {"text": "개나리", "image": "data/image/sado-hidden/youngchun-gaenari.png", "sound": "data/audio/voice-hidden/youngchun-gaenari.wav"},
+      {"text": "해병영춘", "image": "data/image/sado-hidden/youngchun-marine.png", "sound": "data/audio/voice-hidden/youngchun-marine.wav"},
+      {"text": "새우", "image": "data/image/sado-hidden/youngchun-shrimp.png", "sound": "data/audio/voice-hidden/youngchun-shrimp.wav"}
+    ],
     "image": "data/image/sado-hidden/youngchun.png",
     "sound": "data/audio/voice-hidden/youngchun.wav"
   },
@@ -98,6 +103,27 @@
     "id": "1015",
     "name": "엘드르",
     "image": "data/image/sado-hidden/eldr.png",
+    "sound": null
+  },
+  {
+    "id": "1016",
+    "name": "릴1리",
+    "image": "data/image/sado-hidden/lil1li.png",
+    "sound": "data/audio/voice-hidden/lil1li.wav"
+  },
+  {
+    "id": "1017",
+    "name": "리뉴아(R41)",
+    "aliases":[
+      {"text": "R41리뉴아", "image": null, "sound": null}
+    ],
+    "image": "data/image/sado-hidden/renewar41.png",
+    "sound": "data/audio/voice-hidden/renewar41.wav"
+  },
+  {
+    "id": "1018",
+    "name": "오리카",
+    "image": "data/image/sado-hidden/orica.png",
     "sound": null
   }
 ]

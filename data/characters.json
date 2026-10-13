@@ -688,7 +688,8 @@
     "aliases":[
       {"text": "마들렌", "image": "data/image/sado-alt/butter-madeleine.png", "sound": "data/audio/voice-alt/butter-madeleine.wav"},
       {"text": "버터바보", "image": "data/image/sado-alt/butter-crying.png", "sound": "data/audio/voice-alt/butter-crying.wav"},
-      {"text": "얄ㄹ미운수인", "image": "data/image/sado-alt/butter-yalmiun.png", "sound": "data/audio/voice-alt/butter-yalmiun.wav"}
+      {"text": "얄ㄹ미운수인", "image": "data/image/sado-alt/butter-yalmiun.png", "sound": "data/audio/voice-alt/butter-yalmiun.wav"},
+      {"text": "개추", "image": "data/image/sado-alt/butter-gaechu.png", "sound": "data/audio/voice-alt/butter-gaechu.wav"}
 
     ],
     "personality": "활발",
@@ -1502,6 +1503,7 @@
     "name": "다야(퓨어샤인)",
     "aliases": [
       {"text": "퓨어샤인", "image": null, "sound": null},
+      {"text": "퓨다야", "image": null, "sound": null},
       {"text": "다야(주책)", "image": "data/image/sado-alt/dayapureshine-juchaek.png", "sound": "data/audio/voice-alt/dayapureshine-juchaek.wav"}
     ],
     "personality": "광기",
