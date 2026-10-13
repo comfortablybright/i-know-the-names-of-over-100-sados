@@ -115,7 +115,8 @@
     "id": "1017",
     "name": "리뉴아(R41)",
     "aliases":[
-      {"text": "R41리뉴아", "image": null, "sound": null}
+      {"text": "R41리뉴아", "image": null, "sound": null},
+      {"text": "흑뉴아", "image": null, "sound": null}
     ],
     "image": "data/image/sado-hidden/renewar41.png",
     "sound": "data/audio/voice-hidden/renewar41.wav"

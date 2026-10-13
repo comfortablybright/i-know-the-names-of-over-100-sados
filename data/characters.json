@@ -245,7 +245,8 @@
     "name": "프리클",
     "aliases_sensitive":[
       {"text": "뿡뿡이", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"},
-      {"text": "잘자가스", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"}
+      {"text": "잘자가스", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"},
+      {"text": "아자자잣", "image": "data/image/sado-alt/fricle-jalja.png", "sound": "data/audio/voice-alt/fricle-jalja.wav"}
     ],
     "personality": "냉정",
     "race": "마녀",
@@ -277,7 +278,7 @@
     "id": "020",
     "name": "루드",
     "aliases":[
-      {"text": "루비", "image": null, "sound": null}
+      {"text": "홍옥", "image": null, "sound": null}
     ],
     "personality": "활발",
     "race": "용족",
@@ -495,7 +496,9 @@
     "id": "037",
     "name": "시온 더 다크불릿",
     "aliases":[
-      {"text": "편순이", "image": "data/image/sado-alt/xxionx-cvs.png", "sound": "data/audio/voice-alt/xxionx-cvs.wav"}
+      {"text": "편순이", "image": "data/image/sado-alt/xxionx-cvs.png", "sound": "data/audio/voice-alt/xxionx-cvs.wav"},
+      {"text": "마탄의사수", "image": null, "sound": null},
+      {"text": "덜크원더러", "image": null, "sound": null}
     ],
     "personality": "우울",
     "race": "유령",
@@ -994,7 +997,8 @@
     "id": "077",
     "name": "바리에",
     "aliases":[
-      {"text": "방화범", "image": "data/image/sado-alt/barie-arsonist.png", "sound": "data/audio/voice-alt/barie-arsonist.wav"}
+      {"text": "방화범", "image": "data/image/sado-alt/barie-arsonist.png", "sound": "data/audio/voice-alt/barie-arsonist.wav"},
+      {"text": "방화마녀", "image": "data/image/sado-alt/barie-arsonist.png", "sound": "data/audio/voice-alt/barie-arsonist.wav"}
     ],
     "personality": "우울",
     "race": "마녀",
@@ -1299,6 +1303,7 @@
     "name": "아르코",
     "aliases":[
       {"text": "포도찌개", "image": null, "sound": null},
+      {"text": "댄스어쌔신", "image": null, "sound": null},
       {"text": "샤인그레이프", "image": null, "sound": null}
     ],
     "personality": "활발",
@@ -1311,6 +1316,9 @@
   {
     "id": "101",
     "name": "캐시",
+    "aliases":[
+      {"text": "폭스트롯", "image": null, "sound": null}
+    ],
     "personality": "순수",
     "race": "엘프",
     "releaseOrder": "44",

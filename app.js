@@ -250,8 +250,12 @@ function handleInput() {
     revealHidden(hiddenResult.character, hiddenResult.answer);
   }
 
-  elements.input.value = "";
-  if (!state.finished) elements.input.focus();
+  const input = elements.input;
+  input.value = "";
+  if (!state.finished) {
+    input.blur();
+    input.focus();
+  }
 }
 
 function findAnswer(input, spaceMode = false) {
