@@ -1279,8 +1279,8 @@ function updateSlotAliasTooltip(slot, character, guessed) {
   const aliases = aliasLists.flatMap(list =>
     Array.isArray(list)
       ? list
-          .filter(alias => alias && typeof alias.text === "string" && alias.text.trim())
-          .map(alias => alias.text.trim())
+          .filter(alias => alias && typeof alias.text === "string" && alias.text)
+          .map(alias => alias.text)
       : []
   );
 

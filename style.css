@@ -435,10 +435,28 @@ h1 {
 
 .game-settings {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 8px;
   margin-top: 10px;
+  margin-bottom: -12px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.settings-label {
+  display: inline-block;
+  min-width: 0;
+  margin-right: 2px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: var(--subtitle-bg);
+  color: var(--subtitle-fg);
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .game-settings .icon-button {

@@ -59,6 +59,9 @@
   {
     "id": "1009",
     "name": "골디",
+    "aliases":[
+      {"text": "황금", "image": "data/image/sado-hidden/goldy-gold.png", "sound": null}
+    ],
     "image": "data/image/sado-hidden/goldy.png",
     "sound": "data/audio/voice-hidden/goldy.wav"
   },
@@ -126,5 +129,14 @@
     "name": "오리카",
     "image": "data/image/sado-hidden/orica.png",
     "sound": null
+  },
+  {
+    "id": "1019",
+    "name": "의지",
+    "aliases":[
+      {"text": "코코", "image": null, "sound": null}
+    ],
+    "image": "data/image/sado-hidden/cocowill.png",
+    "sound": "data/audio/voice-hidden/cocowill.wav"
   }
 ]
