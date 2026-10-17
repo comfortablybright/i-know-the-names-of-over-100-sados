@@ -85,7 +85,7 @@
     "name": "니펠",
     "aliases":[
       {"text": "주농이", "image": null, "sound": null},
-      {"text": "쭈거", "image": null, "sound": "data/audio/voice-hidden/niffel-petit.wav"}
+      {"text": "쭈거", "image": "data/image/sado-hidden/niffel-petit.png", "sound": "data/audio/voice-hidden/niffel-petit.wav"}
     ],
     "image": "data/image/sado-hidden/niffel.png",
     "sound": "data/audio/voice-hidden/niffel.wav"
@@ -138,5 +138,11 @@
     ],
     "image": "data/image/sado-hidden/cocowill.png",
     "sound": "data/audio/voice-hidden/cocowill.wav"
+  },
+  {
+    "id": "1020",
+    "name": "빵주",
+    "image": "data/image/sado-hidden/bbangjoo.png",
+    "sound": null
   }
 ]

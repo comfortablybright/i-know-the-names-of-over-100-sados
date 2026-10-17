@@ -477,6 +477,9 @@
   {
     "id": "035",
     "name": "마요",
+    "aliases":[
+      {"text": "완전 또까틈", "image": "data/image/sado-alt/mayo-same.png", "sound": "data/audio/voice-alt/mayo-same.wav"}
+    ],
     "personality": "광기",
     "race": "요정",
     "releaseOrder": "0",
@@ -549,7 +552,8 @@
     "id": "040",
     "name": "우이",
     "aliases":[
-      {"text": "에루", "image": "data/image/sado-alt/ui-eru.png", "sound": "data/audio/voice-alt/ui-eru.wav"}
+      {"text": "에루", "image": "data/image/sado-alt/ui-eru.png", "sound": "data/audio/voice-alt/ui-eru.wav"},
+      {"text": "영춘 동백", "image": null, "sound": null}
     ],
     "personality": "활발",
     "race": "정령",
@@ -716,6 +720,9 @@
     "aliases":[
       {"text": "사료스탕스대장", "image": null, "sound": null},
       {"text": "구티그", "image": "data/image/sado-alt/tig-old.png", "sound": "data/audio/voice-alt/tig-old.wav"}
+    ],
+    "aliases_sensitive": [
+      {"text": "티그사골탕", "image": "data/image/sado-alt/tig-soup.png", "sound": "data/audio/voice-alt/tig-soup.wav"}
     ],
     "personality": "활발",
     "race": "수인",
@@ -1627,7 +1634,9 @@
     "id": "123",
     "name": "아라그니아",
     "aliases": [
+      {"text": "진주", "image": "data/image/sado-alt/aragnia-pearl.png", "sound": null},
       {"text": "아라짱", "image": null, "sound": null},
+      {"text": "아꾸꾸", "image": null, "sound": null},
       {"text": "아르타니스", "image": null, "sound": null},
       {"text": "아르고니안", "image": null, "sound": null},
       {"text": "아라베스크", "image": null, "sound": null},
