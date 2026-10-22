@@ -1809,5 +1809,15 @@
     "releaseTerm": "34",
     "image": "data/image/sado/ViviDivine.png",
     "sound": "data/audio/voice/ViviDivine.wav"
+  },
+  {
+    "id": "136",
+    "name": "코페",
+    "personality": "냉정",
+    "race": "정령",
+    "releaseOrder": "76",
+    "releaseTerm": "41",
+    "image": "data/image/sado/Coffe.png",
+    "sound": "data/audio/voice/Coffe.wav"
   }
 ]
