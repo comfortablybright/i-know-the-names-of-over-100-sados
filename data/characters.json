@@ -234,6 +234,7 @@
     "name": "엘레나",
     "aliases":[
       {"text": "시장님", "image": null, "sound": null},
+      {"text": "빅시스터", "image": null, "sound": null},
       {"text": "알레나", "image": "data/image/sado-alt/elena-old.png", "sound": "data/audio/voice-alt/elena-old.wav"}
     ],
     "personality": "냉정",
@@ -1819,5 +1820,15 @@
     "releaseTerm": "41",
     "image": "data/image/sado/Coffe.png",
     "sound": "data/audio/voice/Coffe.wav"
+  },
+  {
+    "id": "137",
+    "name": "두두",
+    "personality": "활발",
+    "race": "용족",
+    "releaseOrder": "77",
+    "releaseTerm": "42",
+    "image": "data/image/sado/Dudu.png",
+    "sound": "data/audio/voice/Dudu.wav"
   }
 ]
